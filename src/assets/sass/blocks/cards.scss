@@ -1,0 +1,18 @@
+@media #{$medium-widths} {
+  .cards {
+    margin: 0 -20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media #{$large-widths} {
+  .cards {
+    margin: 0 -15px;
+  }
+}
+@media #{$extra-large-widths} {
+  .cards {
+    margin: 0 -40px;
+  }
+}

@@ -1,0 +1,21 @@
+@mixin container() {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media #{$small-widths} {
+    width: 540px;
+  }
+  @media #{$medium-widths} {
+    width: 720px;
+  }
+  @media #{$large-widths} {
+    width: 960px;
+  }
+  @media #{$extra-large-widths} {
+    width: 1150px;
+  }
+}
+@mixin color-opacity($color, $opacity: .3) {
+  color: $color;
+  color: rgba($color, $opacity);
+}

@@ -1,0 +1,41 @@
+.page {
+  padding: 30px 0 0;
+  background-image: url('../img/pat.jpg');
+  background-position: 0 0;
+  background-size: 70px;
+}
+.page__content {
+  @include container();
+  overflow: hidden;
+}
+.page__title {
+  margin: 0 0 35px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  font-family: "Exo2.0", "Arial", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+@media #{$medium-widths} {
+  .page {
+    display: table;
+    width: 100%;
+    min-height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent, rgba(0, 0, 0, 0.5)), url('../img/pat.jpg');
+    background-position: center, 0 0;
+    background-size: auto, 70px;
+  }
+  .page__inner {
+    vertical-align: middle;
+    display: table-cell;
+  }
+  .page__content {
+    margin: 0 auto;
+  }
+}
+@media #{$large-widths} {
+  .page__title {
+    margin: 0 0 24px;
+  }
+}
